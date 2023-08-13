@@ -50,19 +50,6 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -206,19 +193,6 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -304,19 +278,6 @@ dummies_experience_level.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -379,19 +340,6 @@ dummies_employment_type.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -456,19 +404,6 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -570,12 +505,14 @@ The following correlation matrix displays the Pearson correlation coefficients b
 A positive $r$ value indicates a positive correlation; the closer the value is to 1, the stronger the positive correlation. A negative value indicates the opposite, with the value closer to -1 indicating a stronger negative correlation.
 
 To calculate $r$ between two variables $X$ and $Y$, the formula is:
+
 $$
 r = \frac{\sum{(X_i - \bar{X})(Y_i - \bar{Y})}}{\sqrt{\sum{(X_i - \bar{X})^2} \cdot \sum{(Y_i - \bar{Y})^2}}}
 $$
+
 Where:
 - $X_i$ and $Y_i$ are individual data points for variables $X$ and $Y$.
-- $ \bar{X} $ and $ \bar{Y} $ are the means of variables $X$ and $Y$.
+- $\bar{X}$ and $\bar{Y}$ are the means of variables $X$ and $Y$.
 
 
 ```python
@@ -585,19 +522,6 @@ display(correlation_matrix)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -818,19 +742,6 @@ display(standard_df)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1039,19 +950,6 @@ display(testing_df)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1232,19 +1130,6 @@ display(testing_df)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1439,11 +1324,11 @@ $$
 \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
 $$
 
-5. **Optimization**: The formula is optimized to find the vector of coefficients \(\beta\) that minimizes the sum of squared residuals. This optimization is achieved by solving the normal equations:
-   
-   $$
-   X^TX\beta = X^Ty
-   $$
+5. **Optimization**: The formula is optimized to find the vector of coefficients $\beta$ that minimizes the sum of squared residuals. This optimization is achieved by solving the normal equations:
+
+$$
+X^TX\beta = X^Ty
+$$
 
    Here, $X^TX$ represents the transpose of the matrix $X$ multiplied by itself, and $X^Ty$ represents the transpose of $X$ multiplied by the vector $y$.
 
@@ -1575,9 +1460,7 @@ print(ols_results_refined.summary())
     [2] The smallest eigenvalue is 1.21e-27. This might indicate that there are
     strong multicollinearity problems or that the design matrix is singular.
 
-
-## Prediction formula
-
+## Prediction formula
 
 ```python
 coefficients = ols_results_refined.params
@@ -1606,19 +1489,6 @@ display(predicted_df)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1715,7 +1585,7 @@ plt.show()
 
 
     
-![png](output_40_0.png)
+![png](graphs/output_40_0.png)
     
 
 
@@ -1733,7 +1603,7 @@ plt.show()
 
 
     
-![png](output_42_0.png)
+![png](graphs/output_42_0.png)
     
 
 
@@ -1754,7 +1624,7 @@ plt.ylabel('Frequency')
 
 
     
-![png](output_43_1.png)
+![png](graphs/output_43_1.png)
     
 
 
@@ -1776,19 +1646,6 @@ display(pd.DataFrame(standardized_errors))
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1868,13 +1725,12 @@ QQ = sm.qqplot(predicted_df['Error'], stats.norm, line='45')
 
 
     
-![png](output_49_0.png)
+![png](graphs/output_49_0.png)
     
 
 
 ---
-
-## Citations
+## Citations
 Bhatia, R. (n.d.). Data Science Job Salaries, V1.0. Retrieved August 11, 2023 from <a href="https://www.kaggle.com/datasets/ruchi798/data-science-job-salaries">https://www.kaggle.com/datasets/ruchi798/data-science-job-salaries</a>.
 
 ---
